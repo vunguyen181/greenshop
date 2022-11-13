@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLANT PROJECT</title>
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="./assets/fontawesome-free-6.1.0-web/css/all.css">
+    <!-- GRID -->
+    <link rel="stylesheet" href="./css/GRID.css">
+    <!-- STYLE -->
+    <link rel="stylesheet" href="./css/STYLE.css">
+    <!-- SLICK CAROUSEL -->
+    <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+<body class="body">
+    <!-- NAVBAR -->
+    <div class="container-fluid">
+        <div class="row">
+                <div class="navbar">
+                    <div class="col">
+                        <div class="navbar-left">
+                            <div class="hamburger-btn-frame">
+                                <div class="line-middle"></div>
+                            </div>
+                            <span class="navbar-logo">
+                                <img class="navbar-logo-pic" src="./assets/PICS/logo.png" alt="">
+                                <a class="navbar-logo-text">GREENSHOP</a>
+                            </span>
+                            <span class="navbar-left-items">
+                                <a href="#shop" class="navbar-item">Shop</a>
+                                <a href="#blogs" class="navbar-item">Blogs</a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="navbar-search">
+                            <input type="text" class="search" placeholder="Search"></input>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="navbar-rights">
+                            <div class="navbar-right navbar-search-btn">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                            <div class="navbar-right navbar-cart-btn">
+                                <span>
+                                    <i id="shopping-cart-btn" class="fa-solid fa-cart-shopping"></i>
+                                </span>
+                                <div class="navbar-cart-item">0</div>
+                            </div>
+                            <a href="" class="navbar-right navbar-login-btn">
+                                <i class="fa-solid fa-arrow-right-to-bracket"></i>  
+                                &nbsp;
+                                Login
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END OF NAVBAR -->
+
+    <!-- GALLERY -->
+    <div class="carousel">
+        <div class="slide">
+            <img src="./assets/PICS/11.png" alt="">
+            <h1>Super Sale
+            <br>
+            UP TO 35%</h1>
+        </div>
+        <div class="slide">
+            <img src="./assets/PICS/12.png" alt="">
+            <h1>Indoor plants</h1>
+        </div>
+        <div class="slide">
+            <img src="./assets/PICS/13.png" alt="">
+            <h1>Outdoor plants</h1>
+        </div>
+    </div>
+    <!-- END OF GALLERY -->
+
+    <!-- HAMBURGER MENU -->
+    <div class="hamburger-background">
+        <div class="hamburger-innercard">
+            <div class="hamburger-navbar">
+                <div class="hamburger-close-btn">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <div class="hamburger-login-btn">Login/Signup</div>
+            </div>
+            <div class="hamburger-body">
+                <span class="hamburger-items">
+                    <a href="#shop" class="hamburger-item">Shop</a>
+                    <a href="#blogs" class="hamburger-item">Blogs</a>
+                </span>
+                <span class="hamburger-smalltexts">
+                    <a href="#" class="hamburger-smalltext hamburger-languages">
+                        English
+                        <i class="fa-solid fa-caret-down"></i>
+                    </a>
+                    <a href="#" class="hamburger-smalltext">Terms of use</a>
+                    <a href="#" class="hamburger-smalltext">Privacy</a>
+                    <a href="#" class="hamburger-smalltext">Community</a>
+                    <a href="#" class="hamburger-smalltext">Help</a>
+                </span>
+            </div>
+        </div>
+    </div>
+    <!-- END OF HAMBURGER MENU -->
+    
+    <!-- LOGIN/SIGN UP -->
+    <!-- login -->
+    <div class="login-background" style="display:none;">
+        <div class="forms">
+            <div class="form form-login" style="display: block;">
+                <div class="login-signup-header">
+                    <span class="title">Login</span>
+                    <div class="close-btn login-close-btn">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                </div>
+                <form action="#">
+                    <span class="form-group">
+                        <div class="input-field">
+                            <input class="login-input-field" type="text" placeholder="username">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <p class="login-error-text" id="login-error-text"></p>
+                    </span>    
+                    <span class="form-group">
+                        <div class="input-field">
+                            <input id="password" class="password-input-field" type="password" placeholder="password">
+                            <i class="fa-solid fa-lock"></i>  
+                            <i class="fa-solid fa-eye-slash showHidePassword"></i>   
+                        </div>
+                        <p class="password-error-text" id="password-error-text"></p>
+                    </span>
+                    <div class="checkbox-text">
+                        <div class="checkbox-content">
+                            <input type="checkbox" id="logCheck" class="checkbox">
+                            <label for="logCheck" class="text">Remember me</label>
+                        </div>
+                        <a href="#" class="text">Forgot password?</a>
+                    </div>
+                    <div class="input-field button">
+                        <button class="login-submit-button button">Login</button>
+                    </div>
+                </form>
+
+                <div class="login-signup">
+                    <div class="text">
+                        <span>Not a member?</span> 
+                        <a href="#" class="text signup-text">Signup now</a>
+                    </div>
+                </div>
+            </div>
+    <!-- end of login -->
+    <!-- signup -->
+            <div class="form form-signup" style="display: none;">
+                <div class="login-signup-header">
+                    <span class="title">Registration</span>
+                    <div class="signup close-btn signup-close-btn">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                </div>
+                <form id="form-2" action="#">
+                    <span class="form-group">
+                        <div class="input-field">
+                            <input id="username" class="login-signup-username" type="text" placeholder="username">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <p id="username-error-Text" class="signup-error-text"></p>    
+                    </span>
+                    <span class="form-group">
+                        <div class="input-field">
+                            <input id="email" class="login-signup-email" type="text" placeholder="email">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <p id="password-error-Text" class="signup-error-text"></p>    
+                    </span>
+                    <span class="form-group">
+                        <div class="input-field">
+                            <input id="password" class="login-signup-password" type="password" placeholder="password">
+                            <i class="fa-solid fa-lock"></i>    
+                        </div>
+                        <p id="password-error-Text" class="signup-error-text"></p>
+                    </span>
+                    <span class="form-group">
+                        <div class="input-field">
+                            <input id="password" class="login-signup-password-confirmation" type="password" placeholder="password confirmation">
+                            <i class="fa-solid fa-lock"></i>  
+                            <i class="fa-solid fa-eye-slash showHidePassword"></i>   
+                        </div>
+                        <p id="password-error-Text" class="signup-error-text"></p>
+                    </span>
+                    <div class="checkbox-text">
+                        <div class="checkbox-content">
+                            <input type="checkbox" id="signupCheck" class="checkbox">
+                            <label for="signupCheck" class="text">I accept all terms & conditions</label>
+                        </div>
+                    </div>
+                    <div class="input-field button">
+                        <button class="signup-submit-button button">Register</button>
+                    </div>
+                </form>
+
+                <div class="login-signup">
+                    <div class="text">
+                        <span>Already have an account?</span> 
+                        <a href="#" class="text login-text">Login now</a>
+                    </div>
+                </div>
+            </div>
+    <!-- end of signup -->
+        </div>
+    </div>
+    <!-- END OF LOGIN/SIGN UP -->
+
+    <!-- HERO -->
+    <div class="hero">
+        <h1 id="shop" class="hero-title">Our Products</h1>
+        <div class="hero-center container-xxl">
+            <div class="row">
+                <div class="col-3">
+                    <div class="hero-navbar">
+                        <div class="hero-price-range">
+                            <h3>Price range</h3>
+                            <div class="price-range">
+                                <span class="price-range-number-value">50€</span>
+                                <input class="price-range-input" type="range" min="0" max="100" value="50" step="1">                    
+                                <div class="price-range-value">
+                                    <div class="range-left-value">0</div>
+                                    <div class="range-right-value">100€</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hero-size">
+                            <h3>Size</h3>
+                            <div class="hero-product all-size">
+                                <p>All Plants</p>
+                                <p class="hero-size-all"></p>
+                            </div>
+                            <div class="hero-product small-size">
+                                <p>Small</p>
+                                <p class="hero-size-small"></p>
+                            </div>
+                            <div class="hero-product medium-size">
+                                <p>Medium</p>
+                                <p class="hero-size-medium"></p>
+                            </div>
+                            <div class="hero-product large-size">
+                                <p>Large</p>
+                                <p class="hero-size-large"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-9">
+                        <div class="hero-header">
+                            <select class="hero-notify">
+                                <option value="default" class="notify-text">
+                                    Default
+                                </option>
+                                <option value="priceup" class="notify-text">
+                                    Price up
+                                </option>
+                                <option value="pricedown" class="notify-text">
+                                    Price down
+                                </option>
+                            </select>
+                        </div>
+                        <div class="hero-products row gy-4">
+                            <div data-price="" data-height="" id="product-id-alocasia" class="product col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                                <div class="product-image">
+                                    <img src="./assets/PICS/plantpic.jpg" alt="">
+                                </div>
+                                <h1>Alocasia Sanderiana</h1>
+                                <h2>Arrow Sheet</h2>
+                                <h4>+/- 45cm</h4>
+                                <div class="price-and-korb">
+                                    <h3>29,99€</h3>
+                                    <i class="fa-solid fa-cart-shopping add-product-btn"></i>
+                                </div>
+                            </div>
+                            <div data-price="" data-height="" id="product-id-calathea" class="product col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                                <div class="product-image">
+                                    <img src="./assets/PICS/plantpic.jpg" alt="">
+                                </div>
+                                <h1>Calathea Crocata</h1>
+                                <h2>Basket Tassmania</h2>
+                                <h4>+/- 40cm</h4>
+                                <div class="price-and-korb">
+                                    <h3>32,49€</h3>
+                                    <i class="fa-solid fa-cart-shopping add-product-btn"></i>
+                                </div>
+                            </div>
+                            <div data-price="" data-height="" id="product-id-ficus1" class="product col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                                <div class="product-image">
+                                    <img src="./assets/PICS/plantpic.jpg" alt="">
+                                </div>
+                                <h1>Ficus Elastica</h1>
+                                <h2>Rubber Tree</h2>
+                                <h4>+/- 45cm</h4>
+                                <div class="price-and-korb">
+                                    <h3>25,59€</h3>
+                                    <i class="fa-solid fa-cart-shopping add-product-btn"></i>
+                                </div>
+                            </div>
+                            <div data-price="" data-height="" id="product-id-sansevieria" class="product col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                                <div class="product-image">
+                                    <img src="./assets/PICS/plantpic.jpg" alt="">
+                                </div>
+                                <h1>Sansevieria Zeylanica</h1>
+                                <h2>Bow Hemp</h2>
+                                <h4>+/- 70cm</h4>
+                                <div class="price-and-korb">
+                                    <h3>34,59€</h3>
+                                    <i class="fa-solid fa-cart-shopping add-product-btn"></i>
+                                </div>
+                            </div>
+                            <div data-price="" data-height="" id="product-id-cordyline" class="product col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                                <div class="product-image">
+                                    <img src="./assets/PICS/plantpic.jpg" alt="">
+                                </div>
+                                <h1>Ficus Melaelastica</h1>
+                                <h2>Rubber Tree</h2>
+                                <h4>+/- 45cm</h4>
+                                <div class="price-and-korb">
+                                    <h3>22,99€</h3>
+                                    <i class="fa-solid fa-cart-shopping add-product-btn"></i>
+                                </div>
+                            </div>
+                            <div data-price="" id="product-id-calathea" class="product col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                                <div class="product-image">
+                                    <img src="./assets/PICS/plantpic.jpg" alt="">
+                                </div>
+                                <h1>Calathea Ornata</h1>
+                                <h2>Basket Marant</h2>
+                                <h4>+/- 70cm</h4>
+                                <div class="price-and-korb">
+                                    <h3>44,99€</h3>
+                                    <i class="fa-solid fa-cart-shopping add-product-btn"></i>
+                                </div>
+                            </div>
+                            <div data-price="" id="product-id-cavendish" class="product col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                                <div class="product-image">
+                                    <img src="./assets/PICS/plantpic.jpg" alt="">
+                                </div>
+                                <h1>Musa Dwarf Cavendish</h1>
+                                <h2>Banana Plant Musa</h2>
+                                <h4>+/- 60cm</h4>
+                                <div class="price-and-korb">
+                                    <h3>49,99€</h3>
+                                    <i class="fa-solid fa-cart-shopping add-product-btn"></i>
+                                </div>
+                            </div>
+                            <div data-price="" id="product-id-triostar" class="product col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                                <div class="product-image">
+                                    <img src="./assets/PICS/plantpic.jpg" alt="">
+                                </div>
+                                <h1>Calathea Triostar</h1>
+                                <h2>Basket Marant</h2>
+                                <h4>+/- 30cm</h4>
+                                <div class="price-and-korb">
+                                    <h3>18,99€</h3>
+                                    <i class="fa-solid fa-cart-shopping add-product-btn"></i>
+                                </div>
+                            </div>
+                            <div data-price="" id="product-id-pachira" class="product col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                                <div class="product-image">
+                                    <img src="./assets/PICS/plantpic.jpg" alt="">
+                                </div>
+                                <h1>Pachira Aquatica</h1>
+                                <h2>Lucky Chestnut</h2>
+                                <h4>+/- 35cm</h4>
+                                <div class="price-and-korb">
+                                    <h3>19,99€</h3>
+                                    <i class="fa-solid fa-cart-shopping add-product-btn"></i>
+                                </div>
+                            </div>
+                            <div data-price="" id="product-id-seguine" class="product col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                                <div class="product-image">
+                                    <img src="./assets/PICS/plantpic.jpg" alt="">
+                                </div>
+                                <h1>Difenbachia Seguine</h1>
+                                <h2>Difenbachia Maroba</h2>
+                                <h4>+/- 80cm</h4>
+                                <div class="price-and-korb">
+                                    <h3>39,99€</h3>
+                                    <i class="fa-solid fa-cart-shopping add-product-btn"></i>
+                                </div>
+                            </div>
+                            <div data-price="" id="product-id-surculosa" class="product col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                                <div class="product-image">
+                                    <img src="./assets/PICS/plantpic.jpg" alt="">
+                                </div>
+                                <h1>Dracaena surculosa</h1>
+                                <h2>Dragon Plant Surculosa</h2>
+                                <h4>+/- 35cm</h4>
+                                <div class="price-and-korb">
+                                    <h3>19,99€</h3>
+                                    <i class="fa-solid fa-cart-shopping add-product-btn"></i>
+                                </div>
+                            </div>
+                            <div data-price="" id="product-id-solaseguine" class="product col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                                <div class="product-image">
+                                    <img src="./assets/PICS/plantpic.jpg" alt="">
+                                </div>
+                                <h1>Difenbachia Sola Seguine</h1>
+                                <h2>Difenbachia </h2>
+                                <h4>+/- 80cm</h4>
+                                <div class="price-and-korb">
+                                    <h3>69,99€</h3>
+                                    <i class="fa-solid fa-cart-shopping add-product-btn"></i>
+                                </div>
+                            </div>
+                            <div data-price="" id="product-id-zebrina" class="product col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                                <div class="product-image">
+                                    <img src="./assets/PICS/plantpic.jpg" alt="">
+                                </div>
+                                <h1>Alocasia Zebrina</h1>
+                                <h2>Arrow Sheet</h2>
+                                <h4>+/- 75cm</h4>
+                                <div class="price-and-korb">
+                                    <h3>29,99€</h3>
+                                    <i class="fa-solid fa-cart-shopping add-product-btn"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END OF HERO -->
+    <!-- Notification Toast -->
+    <div id="toasts" class="toasts">
+        <div class="toast">
+            <span class="message">Your product is already in the shopping cart</span>
+            <button class="ok-btn">Okay</button>
+        </div>
+    </div>
+    <!-- End of notification toast -->
+    <!-- SHOPPING CART -->
+    <div class="shopping-cart-background">
+        <div class="shopping-cart-wrapper">
+            <div class="shopping-cart-innercard">
+                <div class="shopping-cart-innercard-header">
+                    <h1>Shopping cart</h1>
+                    <i id="cart-close-btn" class="fa-solid fa-xmark"></i>
+                </div>
+                <span class="item-quantity">0</span> 
+                <span class="item-text">items</span>
+                <div class="delivery-text">
+                    <h1>Express Checkout</h1>
+                    <h2>incl. Shipping & VAT</h2>
+                </div>
+                <div class="total-price">
+                    <h1>Total price</h1>
+                    <h2 class="cart-total-cost">0</h2>
+                </div>
+                <button class="paypal-button">
+                    <i class="fa-brands fa-paypal"></i>
+                </button>
+                <div class="cart-condition">
+                    I have read and accept the <a href="#">privacy policy</a> and the <a href="#">general terms and conditions</a>
+                </div>
+                <button class="checkout-btn">CHECKOUT</button>
+                <button class="continue-btn">CONTINUE SHOPPING</button>
+                <div class="all-products">
+                
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END OF SHOPPING CART -->
+
+    <!-- BLOGS -->
+    <div class="blogs">
+        <h1 id="blogs" class="blogs-big-title">Our Blog Posts</h1>
+        <h2 class="blogs-small-title">We are an online plant shop offering a wide range of cheap and trendy plants</h2>
+        <div class="container-xxl">
+            <div class="all-blogs row gy-4">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3">
+                    <div id="" class="single-blog">
+                        <div class="blog-image">
+                            <img src="./assets/PICS/plants blog 1.png" alt="">
+                        </div>
+                        <div class="blog-text">
+                            <h3>July 22 | Read in 5 minutes</h3>
+                            <h1>Care Tips</h1>
+                            <h4>Are the plants you love the ones you can have? Our #1 rule of (green) thumb</h4>
+                            <h2>
+                            Read more
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </h2>
+                        </div> 
+                    </div>
+                </div>
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3">
+                    <div id="" class="single-blog col-12">
+                        <div class="blog-image">
+                            <img src="./assets/PICS/plants blog 2.png" alt="">
+                        </div>
+                        <div class="blog-text">
+                            <h3>July 22 | Read in 5 minutes</h3>
+                            <h1>Which soil exactly for your plants?</h1>
+                            <h4>There are three main types of soil: sand, silt, and clay. The best soil for most plants to ensure optimum growth is a rich, sandy loam. This soil is an even mixture of all three main types of soil</h4>
+                            <h2>
+                                Read more
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </h2> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3">
+                    <div id="" class="single-blog col-12">
+                        <div class="blog-image">
+                            <img src="./assets/PICS/plants blog 3.png" alt="">
+                        </div>
+                        <div class="blog-text">
+                            <h3>July 22  Read in 5 minutes</h3>
+                            <h1>How to choose the right pot for any plant</h1>
+                            <h4>When choosing a pot for a new plant, make sure you select one that has drainage holes and gives the plant room to grow.</h4>
+                            <h2>
+                                Read more
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </h2> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3">
+                    <div id="" class="single-blog col-12">
+                        <div class="blog-image">
+                            <img src="./assets/PICS/plants blog 4.png" alt="">
+                        </div>
+                        <div class="blog-text">
+                            <h3>July 22 | Read in 5 minutes</h3>
+                            <h1>15 of the best bedroom plants for a prettier, healthier space</h1>
+                            <h4>Are you looking for bedroom decorating ideas that go the extra mile? Houseplants can do more than just bring a splash of green indoors, it turns out</h4>
+                            <h2>
+                                Read more
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </h2> 
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- END OF BLOGS -->
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <div class="newsletter">
+            <p>Real news, no spam. Now you can sign in</p>
+            <div class="newsletter-btns">
+                <input class="input-text" type="text" placeholder="Your email address">
+                <button class="newsletter-signin-btn">Sign in</button>
+            </div>
+        </div>
+        <div class="footer-contact row gy-2">
+            <div class="shop-logo col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+                <img class="navbar-logo-pic" src="./assets/PICS/logo.png" alt="">
+                <a class="navbar-logo-text">GREENSHOP</a>
+            </div>
+            <div class="shop-address col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+                <i class="fa-solid fa-location-dot"></i>
+                <p>Choiny 10, 20-816 Lublin</p>
+            </div>
+            <div class="shop-email col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+                <i class="fa-solid fa-envelope"></i>
+                <p>greenshop@outlook.com</p>
+            </div>
+            <div class="shop-telephone col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+                <i class="fa-solid fa-phone"></i>
+                <p>+48 123 456 78</p>
+            </div>
+        </div>
+        <div class="footer-informations row gy-4">
+            <div class="footer-infors footer-infor-account col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+                <p>My Account</p>
+                <h3>My Account</h3>
+                <h3>Our stories</h3>
+                <h3>Contact us</h3>
+                <h3>Career</h3>
+                <h3>Specials</h3>
+            </div>
+            <div class="footer-infors footer-infor-help col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+                <p>Help & Guide</p>
+                <h3>Help Center</h3>
+                <h3>How to buy</h3>
+                <h3>Shipping & Delivery</h3>
+                <h3>Product Policy</h3>
+                <h3>How to return</h3> 
+            </div>
+            <div class="footer-infors footer-infor-categories col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+                <p>Categories</p>
+                <h3>House Plants</h3>
+                <h3>Potter Plants</h3>
+                <h3>Seeds</h3>
+                <h3>Small Plants</h3>
+                <h3>Accessories</h3>
+            </div>
+            <div class="footer-infors footer-infor-socialmedia col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+                <div class="social-media">
+                    <p>Social Media</p>
+                    <div class="social-media-symbols">
+                        <i class="fa-brands fa-facebook-square"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter-square"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                        <i class="fa-brands fa-youtube-square"></i>
+                    </div>
+                    <h1></h1>
+                </div>
+                <div class="payment">
+                    <p>We accept</p>
+                    <div class="payment-symbols">
+                        <i class="fa-brands fa-cc-paypal"></i>
+                        <i class="fa-brands fa-cc-mastercard"></i>
+                        <i class="fa-brands fa-cc-visa"></i>
+                        <i class="fa-brands fa-cc-amex"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END OF FOOTER -->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="./js/JavaS.js"></script>
+
+    <script>
+        Validator({
+            form2:'#form-2',
+            formGroupSelector:'.form-group',
+            errorSelector:'.signup-error-text',
+            inputFieldGroup:'.input-field',
+            rules:[
+                //username:
+                Validator.isRequired('#username','*required'),
+                Validator.minLength('#username',4),
+                //email:
+                Validator.isRequired('#email','*required'),
+                Validator.isEmail('#email','*Email form is incorrect'),
+                //password:
+                Validator.isRequired('#password','*required'),
+                Validator.minLength('#password',6),
+                //password-confirmation:
+                Validator.isRequired('.login-signup-password-confirmation','required'),
+                Validator.isPasswordConfirmation('.login-signup-password-confirmation',function(){
+                    return document.querySelector('.login-signup-password').value;
+                },'Passwords don\'t match')
+            ]
+        })
+    </script>
+</body>
+</html>
